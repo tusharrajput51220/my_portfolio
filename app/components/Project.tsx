@@ -1,15 +1,30 @@
-'use client'
+"use client";
 
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 
 type Props = {};
 
-function Project({ }: Props) {
+function Project({}: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const projects = [
+    {
+      src: "/eminenture.png",
+      heading: "HRMS Chatbot",
+      description: `Developed a full-stack HRMS Chatbot enabling seamless employee communication through individual and group chats. Integrated real-time messaging, audio and video calling using Socket.IO and twilio apis. Built with Next.js, Tailwind CSS, Node.js, Express.js, and MySQL for a scalable and interactive experience.`,
+      techStack: [
+        "Next.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "Socket.IO",
+        "Twilio",
+      ],
+      link: "",
+    },
     {
       src: "/alfennzo.webp",
       heading: "Alfennzo",
@@ -28,11 +43,17 @@ function Project({ }: Props) {
       src: "/tripocation.jpg",
       heading: "Tripocation Holiday",
       description: `Developed a travel web platform with React and Java Spring Boot using microservices architecture. Included user-friendly features like responsive package browsing, enquiry forms, and callback options. Built an admin panel for package management. Hosted on Hostinger.`,
-      techStack: ["React", "Spring Boot", "Microservices", "Tailwind CSS", "Hostinger"],
+      techStack: [
+        "React",
+        "Spring Boot",
+        "Microservices",
+        "Tailwind CSS",
+        "Hostinger",
+      ],
       link: "https://www.tripocationholiday.com",
     },
     {
-      src: "/simplyfy.jpg",
+      src: "/sim.png",
       heading: "Simplyfy",
       description: `Created a crypto trading platform with real-time market data, portfolio tracking, and seamless transaction execution. Designed a responsive and secure trading UI using Next.js and Tailwind CSS. Built the backend with Node.js and Express, and integrated GraphQL APIs for efficient data handling.`,
       techStack: [
@@ -100,8 +121,11 @@ function Project({ }: Props) {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`w-screen flex-shrink-0 snap-center flex flex-col ${project.heading === "Tripocation Holiday" ? "space-y-1" : "space-y-6"
-              } items-center justify-center p-10 md:p-20 h-screen`}
+            className={`w-screen flex-shrink-0 snap-center flex flex-col ${
+              project.heading === "Tripocation Holiday"
+                ? "space-y-1"
+                : "space-y-6"
+            } items-center justify-center p-10 md:p-20 h-screen`}
           >
             <Image
               src={project.src}
@@ -110,7 +134,6 @@ function Project({ }: Props) {
               height={140}
               className="rounded-md object-contain shadow-md transition-transform duration-300 hover:scale-105"
             />
-
 
             <div className="space-y-4 max-w-2xl text-center">
               <a
@@ -130,7 +153,10 @@ function Project({ }: Props) {
               </h5>
               <div className="mt-2 flex flex-wrap justify-center gap-2 text-sm font-medium text-gray-300">
                 {project.techStack.map((tech, idx) => (
-                  <span key={idx} className="bg-gray-800 px-3 py-1 rounded-full">
+                  <span
+                    key={idx}
+                    className="bg-gray-800 px-3 py-1 rounded-full"
+                  >
                     {tech}
                   </span>
                 ))}

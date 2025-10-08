@@ -1,20 +1,36 @@
-'use client';
+"use client";
 
 import React, { useRef, useState, useEffect } from "react";
 import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 
-function Experience({ }: Props) {
+function Experience({}: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const cards = [
     {
+      company: "Eminenture",
+      role: "Full Stack Developer",
+      swork: "June 2025",
+      ework: "Present",
+      p1: "/next.jpg",
+      p2: "/tailwind.png",
+      p3: "/node.jpg",
+      p4: "/express.png",
+      p5: "/mysql.png",
+      p6: "/twilio.png",
+      s1: "Developing a full-featured HRMS Chatbot with real-time communication, enabling individual and group chat functionality using Socket.IO and Node.js.",
+      s2: "Integrated audio and video calling features using Twilio APIs, ensuring seamless connectivity and optimized real-time signaling via the Express backend.",
+      s3: "Built and maintained both frontend and backend modules using Next.js, Tailwind CSS, Express.js, and MySQL, delivering a scalable and high-performance communication system.",
+      experience: "",
+    },
+    {
       company: "Simplyfy Technocraft Pvt. Ltd.",
       role: "Backend Developer",
       swork: "September 2024",
-      ework: "Present",
+      ework: "June 2025",
       p1: "/html.jpg",
       p2: "/csss.jpg",
       p3: "/jpt.jpg",
@@ -56,7 +72,8 @@ function Experience({ }: Props) {
       s1: "Developed full-stack solutions using ReactJS for frontend and Spring Boot for backend services across various government portals.",
       s2: "Designed and managed backend APIs, models, and workflows using Java Spring, and ensured seamless integration with frontend via REST.",
       s3: "Worked with both SQL and NoSQL databases and optimized performance for large datasets using caching and indexing strategies.",
-      experience: "https://drive.google.com/file/d/1f5NckjWP6q40GH7a6j_uMA3yG23_JJQc/view",
+      experience:
+        "https://drive.google.com/file/d/1f5NckjWP6q40GH7a6j_uMA3yG23_JJQc/view",
     },
   ];
 

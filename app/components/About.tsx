@@ -13,31 +13,33 @@ function About({}: Props) {
         About
       </h3>
       <Image
-        className="-mb-20 md:mb-0 flex-shrink-0 w-20 h-20 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 
-        xl:w-[400px] xl:h-[400px] hidden md:inline-flex"
-        src="/p3.jpg"
-        alt=""
-        width={128}
-        height={128} 
+        src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg"
+        alt="HRMS Chatbot"
+        width={400}
+        height={400}
+        quality={100}
+        unoptimized
+        className="rounded-lg object-cover w-[400px] h-[400px]"
       />
+
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-2xl xl:text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-sm xl:text-base"> 
-          Im Tushar 💯, as a full stack developer, I excel in both front-end and back-end
-          technologies, adeptly handling the complete web development lifecycle.
-          With a strong grasp of client-side and server-side programming, I
-          created seamless, responsive, and functional web applications.🌟 My
-          expertise spans HTML, CSS, JavaScript, and frameworks like React or
-          Angular, as well as server technologies like Node.js, Express, and
-          databases such as MongoDB or SQL. My problem-solving skills and
-          attention to detail enable you to deliver high-quality, scalable
-          solutions while collaborating effectively with cross-functional teams.
-          Driven by a passion for technology, I continually stay updated with
-          industry trends and advancements.
+        <p className="text-sm xl:text-base">
+          Im Tushar 💯, as a full stack developer, I excel in both front-end and
+          back-end technologies, adeptly handling the complete web development
+          lifecycle. With a strong grasp of client-side and server-side
+          programming, I created seamless, responsive, and functional web
+          applications.🌟 My expertise spans HTML, CSS, JavaScript, and
+          frameworks like React or Angular, as well as server technologies like
+          Node.js, Express, and databases such as MongoDB or SQL. My
+          problem-solving skills and attention to detail enable you to deliver
+          high-quality, scalable solutions while collaborating effectively with
+          cross-functional teams. Driven by a passion for technology, I
+          continually stay updated with industry trends and advancements.
         </p>
       </div>
     </div>
