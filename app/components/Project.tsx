@@ -149,7 +149,7 @@ function Project({}: Props) {
               </p>
 
               <h5 className="mt-4 text-base font-semibold text-yellow-400">
-                Tech Stack Used:
+                Tech Stack Used
               </h5>
               <div className="mt-2 flex flex-wrap justify-center gap-2 text-sm font-medium text-gray-300">
                 {project.techStack.map((tech, idx) => (
